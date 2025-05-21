@@ -1,0 +1,1484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:camunda="http://camunda.org/schema/1.0/dmn" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_Decision_5e3dc319" name="Task_Assignment_DecisionTable" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.33.1" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.22.0">
+  <decision id="CollectionTableCheck" name="Task Assignment">
+    <decisionTable id="DecisionTable_fe83b04" hitPolicy="COLLECT">
+      <input id="Input_2848bee" label="ReturnMailReviewFound" camunda:inputVariable="ReturnMailReviewFound">
+        <inputExpression id="InputExpression_63d6b56" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_dc21dc1" label="ProviderServiceCode" camunda:inputVariable="ProviderServiceCode">
+        <inputExpression id="InputExpression_9b6ccec" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_435542a" label="COREProductID" camunda:inputVariable="COREProductID">
+        <inputExpression id="InputExpression_bbba512" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_1cf9dac" label="ProductName" camunda:inputVariable="ProductName">
+        <inputExpression id="InputExpression_7d5029e" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_2331c3b" label="DocType" camunda:inputVariable="DocType">
+        <inputExpression id="InputExpression_db493b9" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_b7a2f9f" label="BDExternalID" camunda:inputVariable="BDExternalID">
+        <inputExpression id="InputExpression_0f6560a" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_bf026de" label="DistributionChannel" camunda:inputVariable="DistributionChannel">
+        <inputExpression id="InputExpression_c13025e" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_889b4ff" label="OrganizationName" camunda:inputVariable="OrganizationName">
+        <inputExpression id="InputExpression_b7f53d2" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_df2b7b9" label="InternalRoutingTaskDocType" camunda:inputVariable="InternalRoutingTaskDocType">
+        <inputExpression id="InputExpression_00df7aa" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_41753ce" label="SourceCode" camunda:inputVariable="SourceCode">
+        <inputExpression id="InputExpression_0ba5dd9" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_eebf5c0" label="LOAGenerateDate" camunda:inputVariable="LOAGenerateDate">
+        <inputExpression id="InputExpression_581a974" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_861bfdd" label="PremierServiceCheck" camunda:inputVariable="PremierServiceCheck">
+        <inputExpression id="InputExpression_a876130" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="Output_1265f57" label="Task" name="Task" typeRef="string" />
+      <output id="OutputClause_1irvrrl" label="Add days to interval" name="Add days to interval" typeRef="string" />
+      <rule id="Rule_5d7f1d1e">
+        <inputEntry id="InputEntry_237280f">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_bba1fdc">
+          <text>"MMBD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b018360">
+          <text>"1214"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_70ba77d">
+          <text>"MASSMUTUAL RETIREEASE"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_85140cb">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3d3e22f">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_645348f">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b7a3583">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_583dbac">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ad4cdc9">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_20cc33c">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d67399f">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_bcc6ae4">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0z8knza">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_eac1bf00">
+        <inputEntry id="InputEntry_a856c02">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f0e38da">
+          <text>"MMBD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ac50f1d">
+          <text>"1215"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_50c98c4">
+          <text>"MASSMUTUAL RETIREEASE CHOICE"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d70f71c">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e7092d0">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5ba6552">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6d31fc8">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f4ec514">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_efcb1a6">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1d03ad3">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1432672">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_1539c32">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1cjjroe">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_f049ea4d">
+        <inputEntry id="InputEntry_c926331">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d434e5b">
+          <text>"MMBD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_528b275">
+          <text>"3217"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b595030">
+          <text>"MASSMUTUAL TRANSITIONS SELECT II B-SHARE"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b0de7ce">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","ANNUITY APPLICATION","NB REG 60","INCOMING TRANSFER","NB PURCHASE W APP"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_10bb959">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e97211d">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e5ea3d5">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6557112">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_fdf683e">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_28575de">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b739423">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_e772d43">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_10024rm">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_4cb48917">
+        <inputEntry id="InputEntry_68ce280">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1300deb">
+          <text>"MMBD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_81efe92">
+          <text>"3218"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_14ac8f5">
+          <text>"MASSMUTUAL TRANSITIONS SELECT II L-SHARE"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4fd8889">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","ANNUITY APPLICATION","NB REG 60","INCOMING TRANSFER","NB PURCHASE W APP"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5a5fea3">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a43ea3a">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9e0a2f2">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_74e56cb">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f177f9f">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_628318f">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_fc0accd">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_6e50e8e">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1c7uznk">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_3a843c26">
+        <inputEntry id="InputEntry_a8a4d78">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_993e7b7">
+          <text>"MMBD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ead23b9">
+          <text>"3219"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6698bd8">
+          <text>"MASSMUTUAL CAPITAL VANTAGE B-SHARE"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_fe7bcca">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","ANNUITY APPLICATION","NB REG 60","INCOMING TRANSFER","NB PURCHASE W APP"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_37d57cb">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_65e1fd6">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_679e56b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_958f0e1">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7ac001b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3c26c63">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_826566b">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_c2f288d">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_11g98oe">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_d37c1f09">
+        <inputEntry id="InputEntry_cfa42f7">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_38ea476">
+          <text>"MMBD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_21eb254">
+          <text>"3220"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9207755">
+          <text>"MASSMUTUAL CAPITAL VANTAGE C-SHARE"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_bc0752a">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","ANNUITY APPLICATION","NB REG 60","INCOMING TRANSFER","NB PURCHASE W APP"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4dc53f0">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_dee36ca">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d321c16">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f42bcb8">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c872709">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ffd9097">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4e170bb">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_d25bd2e">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1d5t7jn">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_0c675b1c">
+        <inputEntry id="InputEntry_49f7a3d">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0f94020">
+          <text>"MMBD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6e6603f">
+          <text>"3221"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_41c32c5">
+          <text>"MASSMUTUAL CAPITAL VANTAGE ROP B-SHARE"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_113f84e">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","ANNUITY APPLICATION","NB REG 60","INCOMING TRANSFER","NB PURCHASE W APP"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6f2dee0">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b5101c0">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_cb2b67d">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a0d04b6">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a28cd75">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7c32774">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3520cbe">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_c67ccd7">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_16uw3w3">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_b0490a59">
+        <inputEntry id="InputEntry_657d9d6">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_dd5ce1b">
+          <text>"MMBD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0964e4d">
+          <text>"3222"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c5d53db">
+          <text>"MASSMUTUAL CAPITAL VANTAGE ROP C-SHARE"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_cd970cc">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","ANNUITY APPLICATION","NB REG 60","INCOMING TRANSFER","NB PURCHASE W APP"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_504af47">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7c8bf96">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1efc937">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3b010ec">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_58bc512">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_bc791bc">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6043197">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_6ae96d8">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1y6ctrk">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_88292904">
+        <inputEntry id="InputEntry_96b4dac">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_05d7460">
+          <text>"MMBD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0cf735a">
+          <text>"3240"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_95d2348">
+          <text>"MASSMUTUAL ODYSSEY SELECT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_bfcc768">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","ANNUITY APPLICATION","NB REG 60","INCOMING TRANSFER","NB PURCHASE W APP"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8a2f888">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6b3c147">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d655897">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_44fa007">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_68c0902">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6f48016">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_279a56a">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_91191be">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1c63jgy">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_fbaa9f85">
+        <inputEntry id="InputEntry_4413671">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c72493a">
+          <text>"MMBD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f0d75aa">
+          <text>"3252"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9909f92">
+          <text>"INDEX HORIZONS"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6429b2f">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","ANNUITY APPLICATION","NB REG 60","INCOMING TRANSFER","NB PURCHASE W APP"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_27a39d1">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a0f3c2e">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_209a2df">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_175848c">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_337b158">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9e38a4f">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ed1d3c0">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_d869340">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0t0zrsc">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_77874475">
+        <inputEntry id="InputEntry_1b32f8b">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_78c92a9">
+          <text>"MMBD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e2690e0">
+          <text>"1202"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_012c8c8">
+          <text>"MASSMUTUAL STABLE VOYAGE"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d833cf1">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b3cfb40">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ee4386b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_31ae374">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d45d08f">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ea4fb00">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c347f87">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ab52804">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_131a10e">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1tv7epa">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_0af76d4d">
+        <inputEntry id="InputEntry_7bfc8e6">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_db4949b">
+          <text>"USLC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2b4fded">
+          <text>"3303"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f825a45">
+          <text>"PROTECTED RETIREMENT INCOME ANNUITY"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8631060">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","NB REG 60"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e712b0b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_075bf80">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4866d79">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_98444ff">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9cb0686">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f2e2259">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_10e58e3">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_41001f8">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1umb0wo">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_4634a51d">
+        <inputEntry id="InputEntry_6f6504b">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d7de105">
+          <text>"USLC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0bdadf6">
+          <text>"3585"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d3559bf">
+          <text>"PROTECTED DEFERRED INCOME ANNUITY"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a8bdc85">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","NB REG 60"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_336194c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ed65d2b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ce29cb9">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5cc90e2">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a404ca2">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_26bda91">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5c3d520">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_44dfab2">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0b50trt">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_c32aa003">
+        <inputEntry id="InputEntry_42e8071">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e69f383">
+          <text>"USNY"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b369d50">
+          <text>"3304"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_834a467">
+          <text>"PROTECTED RETIREMENT INCOME ANNUITY NY"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f89368c">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","NB REG 60"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9817287">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5836d37">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9c17d74">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_47b7157">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_91d535b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_cbad8ca">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8e9e905">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_30a4ded">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1pxaapn">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_b65b46f8">
+        <inputEntry id="InputEntry_7f02b69">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e027f5d">
+          <text>"USNY"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a96b2a7">
+          <text>"3326"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b610bed">
+          <text>"PROTECTED DEFERRED ANNUITY NY"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_962d41b">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","NB REG 60"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ab6c7f0">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_77b8989">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_715ce3d">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b71c227">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_03b450e">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_31aa116">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6411f1d">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_f99cf90">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1r3jfml">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_1ce2344b">
+        <inputEntry id="InputEntry_10ff6ca">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b0ed41c">
+          <text>"USLC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4fe6e14">
+          <text>"3325"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f3e0f75">
+          <text>"PROTECTED DEFERRED ANNUITY"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f033d9b">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","NB REG 60"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b69141b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7f6f56e">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_871f416">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0d1a382">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d040004">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3c1645a">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_692b978">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_ab76c7a">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0nfdw1a">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_b0436d82">
+        <inputEntry id="InputEntry_686d537">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_813e163">
+          <text>"SBGC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0bf18a5">
+          <text>"965"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3f91db7">
+          <text>"ELITEDESIGNS"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_77c5330">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","NB REG 60","INCOMING TRANSFER","ANNUITY APPLICATION","NB PURCHASE W APP"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ea8b001">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_fa5db45">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1bc4f74">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e63fc8e">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_112b655">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_cd5f097">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_36ae32b">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_c97a74e">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0ztq9al">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_8e0620b7">
+        <inputEntry id="InputEntry_2b5c621">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f765d77">
+          <text>"SBGC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_94d000f">
+          <text>"1194"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2258c27">
+          <text>"TOTAL VALUE ANNUITY W/MVA"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_15e3090">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","NB REG 60","INCOMING TRANSFER","ANNUITY APPLICATION","NB PURCHASE W APP"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8e788f1">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8605618">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_92795cb">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f920e00">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_98a4e06">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5dfa054">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6c23414">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_3af3bee">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0mwpchp">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_a3a6a166">
+        <inputEntry id="InputEntry_7beef0f">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_84169c0">
+          <text>"SBGC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_363fc51">
+          <text>"1195"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_476fd24">
+          <text>"TOTAL VALUE ANNUITY W/OUT MVA"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ab76f12">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","NB REG 60","INCOMING TRANSFER","ANNUITY APPLICATION","NB PURCHASE W APP"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_135a569">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_afa904a">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e908f3b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_44ab549">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_529a74e">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_31f8103">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_51f557b">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_7a69663">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0uygend">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_d2fdeab1">
+        <inputEntry id="InputEntry_701af36">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5256c7f">
+          <text>"SBGC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b53965f">
+          <text>"3234"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c4b5abe">
+          <text>"SECURITY BENEFIT RATETRACK ANNUITY"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_eb625bd">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","NB REG 60","INCOMING TRANSFER","ANNUITY APPLICATION","NB PURCHASE W APP"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b7a657a">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e8c1b66">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9d304f3">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1f45084">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_aeac671">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d83e793">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5db429b">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_9c9a50c">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1nzoybz">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_c9b2a8b9">
+        <inputEntry id="InputEntry_2eeda4e">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_cbaa397">
+          <text>"SBGC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_64ea311">
+          <text>"3275"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_64ca430">
+          <text>"SB CLEARLINE ANNUITY"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e9f6517">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","NB REG 60","INCOMING TRANSFER","ANNUITY APPLICATION","NB PURCHASE W APP"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f74ef57">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_38cb99c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8da2111">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_424414d">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ce3f450">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5811b43">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_35f4fa6">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_0a6bbac">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0wmopir">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_8de0d5e4">
+        <inputEntry id="InputEntry_62c08fc">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6ec1449">
+          <text>"GLCO"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c3948e8">
+          <text>"3313"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_cbb947f">
+          <text>"GILICO WEALTHCHOICE G SERIES"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b5b9f57">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","NB REG 60"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d287d85">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9987650">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_87043ae">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8b91b57">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8c5f56e">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_12fb0b1">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c5a5978">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_6f56488">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0xtr0sy">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_c17298d8">
+        <inputEntry id="InputEntry_07ae3b0">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6b4390f">
+          <text>"GLCO"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4ce0a02">
+          <text>"3263"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d3fbafc">
+          <text>"RATEWISE ANNUITY"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_31cf8ef">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","NB REG 60"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_83b7ac4">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_23e353c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_83a9a41">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0477286">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b6cbd5f">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3e7b7d3">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8740500">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_b96d886">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_189hus6">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_4b8d3051">
+        <inputEntry id="InputEntry_0255487">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8f36187">
+          <text>"GLCO"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ea3295f">
+          <text>"3588"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_314ba1e">
+          <text>"GUARANTY GROWTH BUILDER"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9e7ae9d">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","NB REG 60"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_33370f7">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1191397">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9b5d54b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0767aed">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ddd8db0">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8c8953c">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_141905f">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_6ee84a9">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1716eea">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_5c6a34e8">
+        <inputEntry id="InputEntry_668d86e">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4d56eab">
+          <text>"GLCO"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b959dae">
+          <text>"3260"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3c1c0f9">
+          <text>"GUARANTY GROWTH PLUS"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b830315">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","NB REG 60"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7d06176">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_37481c8">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0c569ba">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_567cc76">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_42aea7e">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_54bc2a4">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_23accd0">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_735207d">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0hszxfi">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_01c96ff5">
+        <inputEntry id="InputEntry_f66ba6b">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b251329">
+          <text>"ULIC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2822d96">
+          <text>"3302"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_069b44a">
+          <text>"UNITED LIFE ACCESS SPDA"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_15850fa">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","NB REG 60"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_acbf879">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b4ff875">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b36c217">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b220c5e">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8466c1e">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_aacbe8d">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_786f4a0">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_98f70b5">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1yah7ex">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_400db174">
+        <inputEntry id="InputEntry_8daf08f">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6aa2f44">
+          <text>"ULIC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ddda470">
+          <text>"3301"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1db4374">
+          <text>"UNITED LIFE PERFORMANCE SPDA"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_96d3dad">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","NB REG 60"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_282438a">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b949a4b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b7ac79b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b181c7b">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a96c9ca">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0021634">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c106711">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_2fc2f94">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1s022c5">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_4587c335">
+        <inputEntry id="InputEntry_81f2ba0">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_cb9b261">
+          <text>"ULIC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_904607e">
+          <text>"3314"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f9fc9f6">
+          <text>"UNITED LIFE WEALTHCHOICE U SERIES"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5f1e620">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","NB REG 60"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9fe8d55">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6e557ee">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_483d8a1">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f0a7ae3">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b1e5710">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c384b56">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_efd1458">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_4de657b">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1wvbbe0">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_c245e498">
+        <inputEntry id="InputEntry_e2957e9">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_10007ab">
+          <text>"SBGC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9e48a98">
+          <text>"3610"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_43c367f">
+          <text>"TOPRIDGE BONUS ANNUITY"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3b3c164">
+          <text>"SD ELECTAPP","INTERNAL CONVERSION","ANNUITY APPLICATION","NB REG 60","INCOMING TRANSFER","NB PURCHASE W APP"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e9de143">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1c375f7">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_bdc179b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_19a3814">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ef4890f">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_20b1dc7">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3f510fb">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_6b0a9af">
+          <text>"Agent Can Sell Check"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1mu7nm1">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_e5f6ee73">
+        <inputEntry id="InputEntry_93c70fb">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a5e48ee">
+          <text>"MMBD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_bb4df80">
+          <text>"3217","3219","3220","3221","3222","3240","3252"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0d2813a">
+          <text>"MASSMUTUAL TRANSITIONS SELECT II B-SHARE","MASSMUTUAL CAPITAL VANTAGE B-SHARE","MASSMUTUAL CAPITAL VANTAGE C-SHARE","MASSMUTUAL CAPITAL VANTAGE ROP B-SHARE","MASSMUTUAL CAPITAL VANTAGE ROP C-SHARE","MASSMUTUAL ODYSSEY SELECT","INDEX HORIZONS"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0cf3cdc">
+          <text>"NB PURCHASE W APP","ANNUITY APPLICATION","INCOMING TRANSFER"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0e7b3d7">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_252ec05">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c7900cc">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_469f8a4">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e281e06">
+          <text>"M"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6a411cd">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5d3f8e3">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_cabfdc0">
+          <text>"NB Application Validation"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1lk39u1">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_dea1a361">
+        <inputEntry id="InputEntry_5978eee">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ce6bace">
+          <text>"SBGC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f1f4955">
+          <text>"102","1150","1194","1195","121","122","123","124","125","126","1273","1274","3234","3249","3275","3610","465","495","965","966","967","968"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e62dc27">
+          <text>"TOTAL VALUE ANNUITY","TOTAL VALUE ANNUITY NO MVA","RATETRACK PLUS","RATETRACK","SB CLEARLINE ANNUITY","ELITEDESIGNS 0 YR CDSC","ELITEDESIGNS 5 YR CDSC","ELITEDESIGNS NY 0 YR CDSC","ELITEDESIGNS NY 5 YR CDSC","ELITEDESIGNS II","ELITEDESIGNS II NY","SECUREDESIGNS VARIABLE ANNUITY","SECUREDESIGNS VARIABLE ANNUITY 2","SECUREDESIGNS VARIABLE ANNUITY NY","VARIFLEX 94 NON QUALIFIED VARIABLE ANNUITY","VARIFLEX 94 QUALIFIED VARIABLE ANNUITY","VARIFLEX 94 NON QUALIFIED 4.25%","VARIFLEX 94 QUALIFIED 4.5%","VARIFLEX 98 QUALIFIED","VARIFLEX 98 NON QUALIFIED","TOTAL FIXED INTEREST ANNUITY","CLEARLINE","TOPRIDGE BONUS ANNUITY"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ed94e50">
+          <text>"NB PURCHASE W APP","ANNUITY APPLICATION","INCOMING TRANSFER"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ff9c2a6">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d3afc36">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ae20f7f">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e0b82ae">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1a1e702">
+          <text>"M"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_63d91d7">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ef6f010">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_f84be69">
+          <text>"NB Application Validation"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0rsqnfs">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_dab1cfc6">
+        <inputEntry id="InputEntry_853ea0f">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9473b4c">
+          <text>"USNY"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_85a23d2">
+          <text>"3586","3589"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_36cd676">
+          <text>"USAA PROTECTED DEFERRED INCOME ANNUITY"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_aaa7a97">
+          <text>"NB PURCHASE W APP","ANNUITY APPLICATION","INCOMING TRANSFER"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a03b718">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f262dc9">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a9a5b4e">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a9c20e9">
+          <text>not(InternalRoutingTaskDocType in ["REINDEX"])</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_841cf31">
+          <text>"M"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_082f1d8">
+          <text>"DEFAULT"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9ca458b">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_61f0694">
+          <text>"NB Application Validation"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0q343de">
+          <text></text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="CollectionTableCheck">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

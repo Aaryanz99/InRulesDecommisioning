@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:camunda="http://camunda.org/schema/1.0/dmn" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_Decision_270a6d7c" name="Application_Checks_DecisionTable" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.33.1" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.22.0">
+  <decision id="ApplicationChecks" name="Application Checks">
+    <decisionTable id="DecisionTable_2b6e8ca" hitPolicy="COLLECT">
+      <input id="Input_0787b54" label="SubType" camunda:inputVariable="SubType">
+        <inputExpression id="InputExpression_92a5f79" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_79fa85d" label="Application" camunda:inputVariable="Application">
+        <inputExpression id="InputExpression_f957abd" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_7d35363" label="CheckAppplicationDate_Application" camunda:inputVariable="CheckAppplicationDate_Application">
+        <inputExpression id="InputExpression_f0e3810" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_8211463" label="CheckContractNbr_Application" camunda:inputVariable="CheckContractNbr_Application">
+        <inputExpression id="InputExpression_0f3b248" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_2110f66" label="CheckEffectiveDate_Application" camunda:inputVariable="CheckEffectiveDate_Application">
+        <inputExpression id="InputExpression_d69573d" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_e825e1c" label="CheckInitialPurchase_GrossAmount_Application" camunda:inputVariable="CheckInitialPurchase_GrossAmount_Application">
+        <inputExpression id="InputExpression_ac602db" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_1ff6337" label="CheckPlanCode_Application" camunda:inputVariable="CheckPlanCode_Application">
+        <inputExpression id="InputExpression_d3ee80b" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_03fa75b" label="CheckPolicyDate_Application" camunda:inputVariable="CheckPolicyDate_Application">
+        <inputExpression id="InputExpression_c907d3b" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_e7c6408" label="CheckPolicyValues_ContribType_Application" camunda:inputVariable="CheckPolicyValues_ContribType_Application">
+        <inputExpression id="InputExpression_921591f" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_807cc3e" label="CheckProcessingCoID_Application" camunda:inputVariable="CheckProcessingCoID_Application">
+        <inputExpression id="InputExpression_266125d" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_d8cef86" label="CheckQualificationFlag_Application" camunda:inputVariable="CheckQualificationFlag_Application">
+        <inputExpression id="InputExpression_a8497b5" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_5f3f900" label="CheckPackageID" camunda:inputVariable="CheckPackageID">
+        <inputExpression id="InputExpression_e2a9572" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_ebbad59" label="CheckSpecCode" camunda:inputVariable="CheckSpecCode">
+        <inputExpression id="InputExpression_7a450c3" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_e8efa80" label="CheckVariationGroupID" camunda:inputVariable="CheckVariationGroupID">
+        <inputExpression id="InputExpression_37d7fde" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_1421344" label="CheckNameType" camunda:inputVariable="CheckNameType">
+        <inputExpression id="InputExpression_c81cbde" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_5ed6435" label="CheckRoleType" camunda:inputVariable="CheckRoleType">
+        <inputExpression id="InputExpression_93090d5" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_5349331" label="CheckRoleOption" camunda:inputVariable="CheckRoleOption">
+        <inputExpression id="InputExpression_84f4b8d" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1dpd4cw" label="MatchedInd" camunda:inputVariable="MatchedInd">
+        <inputExpression id="LiteralExpression_0anbpj4" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="Output_92d514c" label="Application Error" name="Application Error" typeRef="string" />
+      <rule id="Rule_05c76bde">
+        <inputEntry id="InputEntry_98d6e34">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_fd588ea">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a1e98ac">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c585314">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3386419">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d8a3da6">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e8c8ec0">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7513b74">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f236450">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_515b14b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_120e2bd">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4bea65c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3f905db">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_91e5b75">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8ce0f0b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8c84fcd">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9168328">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0aw2ezy">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_a1c9af6">
+          <text>"Application Date field is required but is missing"</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_d3197bd3">
+        <inputEntry id="InputEntry_59d708c">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_39f8150">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_095641a">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2eea09c">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b858019">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4e763db">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0ffe481">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1991668">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_43bb319">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_cc69707">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c4cb77c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a12f4d7">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9fd3669">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d7478de">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1a22872">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1666ece">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_28709fe">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0fw9idv">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_cdf04be">
+          <text>"Contract Number field is required but is missing"</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_209c2748">
+        <inputEntry id="InputEntry_7990d8c">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0722c74">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f3feb4d">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_017cc78">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4a03aa0">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8e01ef2">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_eb5b7bd">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_40425ea">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b8a7fc7">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_bf26398">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_204b810">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0e0f5c8">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_68df102">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d8bc352">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f0025c4">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_974c4b9">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5ac9b08">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0qo58ta">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_ff3f814">
+          <text>"Effective Date field is required but is missing"</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_57ef3ee1">
+        <inputEntry id="InputEntry_368f1c9">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c7f2aa0">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f3274c4">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1665dc4">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9b0ce25">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ddcc5c0">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ccf069a">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_759ac78">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5d5c640">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a9afbaa">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_dcc36cd">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b35ad5c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5143ecc">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_eb255b9">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7c6516a">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_230cf93">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d8371fe">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1gx5ld9">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_468edb2">
+          <text>"InitialPurchase_GrossAmount field is required but is missing"</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_addd4f4f">
+        <inputEntry id="InputEntry_02f175e">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d0bac1f">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_26e2938">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d1be205">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_993f387">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b5c2b34">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3a12a3e">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_41eba4c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5d9c3d8">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7c5cfee">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_26e304a">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_13495bd">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_37ce3d7">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1aa1337">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_bf1f384">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7ffcccb">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5802c4d">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_015djh2">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_999e386">
+          <text>"PlanCode field is required but is missing"</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_47b2ec59">
+        <inputEntry id="InputEntry_ff1ac16">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ee32010">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9256fa9">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_bdb6e58">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_122a4df">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_260235c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0de6890">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0b9993a">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d5e0e12">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1f0c235">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_25655fc">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ac093fb">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6e5f06c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_13d956b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5ad6a45">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_74fc1b5">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_868488a">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1lci3qn">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_8a71c20">
+          <text>"PolicyDate field is required but is missing"</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_2e3aefc9">
+        <inputEntry id="InputEntry_0772c3c">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2d3b2ba">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6a04fad">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c9bb6c8">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8bb43a4">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_06d6d17">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_54de0c6">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ec5f47e">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_58a7683">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_cfe6732">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e470f84">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ae1042d">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1993384">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_12ab916">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3222988">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_cf58c2b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3c8c9ac">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1k6d6ve">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_ed16345">
+          <text>"PolicyValues_ContribType field is required but is missing"</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_e1f8dbde">
+        <inputEntry id="InputEntry_1af7e20">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0f7a43d">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_72fe53e">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_286e58f">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_87cb0ab">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ee407a7">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b184391">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8ab7f2b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7241d49">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e3ea615">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_983b879">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b152ad4">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_bb2e03e">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2eebea5">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d369175">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9f1f8b6">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4084599">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ss73ny">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_7c8ed57">
+          <text>"ProcessingCoID field is required but is missing"</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_f70d22fd">
+        <inputEntry id="InputEntry_38994ed">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b5eb775">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_cd9dc97">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_763d299">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_92a879a">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8756422">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b5e2213">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6b965b1">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_057bb97">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_069a506">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6bb1f1e">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_48d626d">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f9f786d">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a86d642">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5fb7c87">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f082961">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f061b28">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0dni7rj">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_1f1d70d">
+          <text>"QualificationFlag field is required but is missing"</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_49c48fb5">
+        <inputEntry id="InputEntry_e3d3286">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2137e0c">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_115f653">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b5e960c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3abbea5">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b2c091f">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2c3eb9c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8cf31ce">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2fa4b00">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_589d614">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4255ee7">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7a25f4b">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_18bafbc">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_422594d">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5c3f3dd">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_632baf9">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_75e13df">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0uzex5p">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_eb910f9">
+          <text>"PackageID field is required but is missing"</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_3af5d6a0">
+        <inputEntry id="InputEntry_d6c0175">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_83a0752">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_26eefa9">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9529a23">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ddc9f6b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_862d706">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4fc0b15">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_228c291">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0f55adc">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7fa227c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_15ec154">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_cacf755">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_33b0275">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d1f64b3">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6d50670">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_de3405d">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f942e43">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1q1gp01">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_28cd04e">
+          <text>"SpecCode field is required but is missing"</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_543902fd">
+        <inputEntry id="InputEntry_347473c">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3f26d32">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_eb9d983">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3869a63">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7eadddd">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c8ddda7">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6cf7e3c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e4d60ef">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8660adb">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9242369">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2a23548">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_22a465d">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f73f5a9">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_48f5328">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e954823">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5ff9361">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8c084f8">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1wvdk7h">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_eb0de3c">
+          <text>"VariationGroupID field is required but is missing"</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_36630812">
+        <inputEntry id="InputEntry_c6f3c65">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f680ca3">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_32a1e10">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e976711">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_feff14c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5b93897">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f5c048f">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d463687">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_18f4e9d">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2c70823">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e2a344c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a992ded">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6a7e45f">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_df5e919">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_30be296">
+          <text>contains(context.CheckNameType, "CNT=N")</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_cd205c8">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3ae34c7">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_10mwpyh">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_e9921f1">
+          <text>"NameType field is required but is missing"</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_6ec4929b">
+        <inputEntry id="InputEntry_d0e5faa">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3f5b347">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_50bbbdb">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d04c12e">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9f86a95">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_83af905">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_00a0078">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_cd345d9">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7271060">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8782802">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b104292">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3448112">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a48d55e">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_577e031">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0eb4d54">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ed55500">
+          <text>contains(context.CheckRoleType, "CRT=N")</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6d5cf03">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1a1iwqm">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_33be348">
+          <text>"RoleType field is required but is missing"</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_a07ef924">
+        <inputEntry id="InputEntry_5dedd72">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_79caf89">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7fa69f9">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a46fc6a">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5b29a2b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b4dfd3d">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e49c071">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b2cfa01">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9670087">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4a2231d">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a491923">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_492d20a">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_20cde2b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d5565cc">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_aaa6a34">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0bdbfe9">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c284111">
+          <text>contains(context.CheckRoleOption, "CRO=N")</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1gs01zo">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_a090a9e">
+          <text>"RoleOption field is required but is missing"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1jh46ff">
+        <inputEntry id="UnaryTests_1a5t3hb">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1t5vweg">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_136m9ee">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0skbfad">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0rzznha">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17nd7n6">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1xyg0qa">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0pfdksz">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0xpsrrk">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1a4ixs3">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1t59slq">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1m8t2lo">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1y4ohpb">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_07epft7">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1j3b1tk">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_07i744c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0iepi3l">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1qpi85m">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1omv8g8">
+          <text>"A required data field is missing or invalid, 'Severe', concatenate 'GMDB rider', deathBenefitRider FeatureDesc with no leading or trailing spaces, '(Spec Code', Uppercase Trimmed deathBenefitRider SpecCode , ' Variation Group ID ', Uppercase Trimmed deathBenefitRider VariationGroupID , ') is required but is missing.', and related erroring field or entity 'Features'"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="ApplicationChecks">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

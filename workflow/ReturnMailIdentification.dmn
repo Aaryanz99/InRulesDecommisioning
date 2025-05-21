@@ -1,0 +1,2036 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:camunda="http://camunda.org/schema/1.0/dmn" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_Decision_2bd8388e" name="DecisionTable" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.33.1" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.22.0">
+  <decision id="ReturnMailIdentification" name="ReturnMailIdentification">
+    <decisionTable id="DecisionTable_c25e2d8" hitPolicy="FIRST">
+      <input id="Input_b724f507" label="ProviderServiceCode" camunda:inputVariable="ProviderServiceCode">
+        <inputExpression id="InputExpression_764073e3" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_289a3832" label="DocType" camunda:inputVariable="DocType">
+        <inputExpression id="InputExpression_2215d89e" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_d3f906e8" label="OwnerExists" camunda:inputVariable="OwnerExists">
+        <inputExpression id="InputExpression_1869763d" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_e102869d" label="AnnuitantExists" camunda:inputVariable="AnnuitantExists">
+        <inputExpression id="InputExpression_ccb224dc" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="Output_9ee84f7" label="IsReturnMailRequired" name="IsReturnMailRequired" typeRef="boolean" />
+      <output id="Output_d211309" label="SkipReturnMail" name="SkipReturnMail" typeRef="boolean" />
+      <rule id="Rule_7a264ac8">
+        <inputEntry id="InputEntry_bfcd476">
+          <text>"SBGC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_fb929b1">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6f11d9e">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_074a833">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_f93e997">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_1f33654">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_bfdaaae5">
+        <inputEntry id="InputEntry_7dc770c">
+          <text>"SBGC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d6caeaf">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_bf2bf86">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6304540">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_8d95781">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_f4d4af4">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_16e29f77">
+        <inputEntry id="InputEntry_ec94b8f">
+          <text>"SBGC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_250f8a8">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3fbc029">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_76f32f1">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_30d05b6">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_d4795be">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_99cc4b97">
+        <inputEntry id="InputEntry_5516d4d">
+          <text>"RSLN"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ade109b">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c19dd61">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_50a60a1">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_746a5e5">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_1d72b2c">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_80c3fbcb">
+        <inputEntry id="InputEntry_4558a14">
+          <text>"RSLN"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_79e7947">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_754332a">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e03b299">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_2f166bf">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_fe75172">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_bac24153">
+        <inputEntry id="InputEntry_1a55aa7">
+          <text>"RSLN"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_87fa3ee">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9d4378e">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0fb2d03">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_54c3931">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_4179d98">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_2559fc06">
+        <inputEntry id="InputEntry_18c6391">
+          <text>"RSLN"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ec52188">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_832af1a">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4a7e853">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_649de5a">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_ae499e2">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_6eaa04f8">
+        <inputEntry id="InputEntry_3b162c6">
+          <text>"RSLN"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9fe3959">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_72c4a21">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2e49c6d">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_43cc7b5">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_55f0639">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_02ae8358">
+        <inputEntry id="InputEntry_f6f7c7f">
+          <text>"RSLN"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5228324">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_88735f1">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e55e07b">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_a129358">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_88295e2">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_e6a81c7a">
+        <inputEntry id="InputEntry_c732002">
+          <text>"FLIC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_aa708d9">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_fca7dac">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_54a18ae">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_b3bfad9">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_8be2e9a">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_78bede5b">
+        <inputEntry id="InputEntry_5e2c82d">
+          <text>"FLIC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5065ffd">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a226bbb">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_85da136">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_fede75e">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_7ed3489">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_2a4a6a9e">
+        <inputEntry id="InputEntry_fe7250a">
+          <text>"FLIC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_15e55f3">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9c7be17">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7a33b62">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_1cdbeee">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_ca82d7a">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_d16c81dc">
+        <inputEntry id="InputEntry_6183525">
+          <text>"FLIC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0f5b0b6">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_546daf2">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_bf8d4df">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_a566d1e">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_745b64f">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_a8e1e592">
+        <inputEntry id="InputEntry_7706ab7">
+          <text>"FLIC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_101ea80">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4af07c2">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3b44814">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_2a956af">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_e0fd749">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_95b9d083">
+        <inputEntry id="InputEntry_4471f8b">
+          <text>"FLIC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4fae299">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c4dbcdd">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8b5a5a7">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_d9bb480">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_5d9f989">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_2e32300c">
+        <inputEntry id="InputEntry_0cc8abb">
+          <text>"GSCH"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d8ce0e3">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6a558cc">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_654373c">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_c2fdb51">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_efec434">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_1428df67">
+        <inputEntry id="InputEntry_907914b">
+          <text>"GSCH"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e4eaa39">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f8a0f94">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_41de0cf">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_10a8542">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_ca626a6">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_2def4a76">
+        <inputEntry id="InputEntry_6d89e2f">
+          <text>"GSCH"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e8d70ab">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f64e7a9">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_68fb221">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_9246767">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_e8ae962">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_26408728">
+        <inputEntry id="InputEntry_8cf6d8b">
+          <text>"GSCH"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d204356">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8416122">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e6b7b1f">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_3e6724f">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_173badc">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_db00d7c2">
+        <inputEntry id="InputEntry_b3a24af">
+          <text>"GSCH"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ebab20b">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6529696">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_36247a3">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_3b5d14d">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_677a39e">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_b632ef33">
+        <inputEntry id="InputEntry_b95d261">
+          <text>"GSCH"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_482a1b9">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c2253e1">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1fc825a">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_e657a8e">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_90ee287">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_4c07afae">
+        <inputEntry id="InputEntry_a004a22">
+          <text>"GSAL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9d36041">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8ad2d05">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_873d794">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_bc58b9d">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_412c301">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_5c9f8752">
+        <inputEntry id="InputEntry_b560f26">
+          <text>"GSAL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_dd36df2">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8f6f0ee">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e4a7e03">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_7b0c7c9">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_59273fc">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_5a4c017a">
+        <inputEntry id="InputEntry_5fbd9b9">
+          <text>"GSAL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c6b9999">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_05f786e">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_bc7bf80">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_f460084">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_2d34073">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_8e87e41a">
+        <inputEntry id="InputEntry_fcd664a">
+          <text>"GSAL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_621fb28">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b7de9ef">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1a0d66b">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_bb38e57">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_6ade144">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_eee0e96d">
+        <inputEntry id="InputEntry_280a399">
+          <text>"GSAL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_afd816e">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f960143">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4f46d66">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_1e28a79">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_aa9006e">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_97031c52">
+        <inputEntry id="InputEntry_9bff91e">
+          <text>"GSAL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a234cbf">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a64631a">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2e87278">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_7f28fce">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_60d12a6">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_3978326b">
+        <inputEntry id="InputEntry_dbb5049">
+          <text>"GSIN"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a000912">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_63f3e4d">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a57d4ec">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_adf9181">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_80d913f">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_93f6e8c7">
+        <inputEntry id="InputEntry_a0320e9">
+          <text>"GSIN"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5ac2a42">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9c53424">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_19fecf7">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_50c4b37">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_0ba0eed">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_652ff23a">
+        <inputEntry id="InputEntry_8b14e6e">
+          <text>"GSIN"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_09fa9d1">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5467841">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8e423aa">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_a9077fd">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_ea59242">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_3aba2f51">
+        <inputEntry id="InputEntry_9223c35">
+          <text>"GSIN"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_181995c">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b217bc3">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4623006">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_adb8a26">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_0052e42">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_d1eff137">
+        <inputEntry id="InputEntry_651bf60">
+          <text>"GSIN"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a21773a">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_eafb2dd">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f53ba33">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_9aa05cc">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_63f73a0">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_dba56e0f">
+        <inputEntry id="InputEntry_3ea4d72">
+          <text>"GSIN"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_32e7cd5">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e821886">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a9eef09">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_0dffcb8">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_0a2c7c3">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_822250af">
+        <inputEntry id="InputEntry_962c7a3">
+          <text>"GSHH"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f43a6d6">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ffeca2e">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4a05612">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_28aa24a">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_6f922b7">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_11c4f9d1">
+        <inputEntry id="InputEntry_80e38f9">
+          <text>"GSHH"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_47c5a36">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8c02286">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2c648e7">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_60423c0">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_c1ebf19">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_269786b9">
+        <inputEntry id="InputEntry_2c8d3b4">
+          <text>"GSHH"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_bfc66b5">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f2a01a9">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2dc71bb">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_502c819">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_2b81282">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_00d5ecc8">
+        <inputEntry id="InputEntry_cb19122">
+          <text>"GSHH"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_12bf20a">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a7403a3">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ecaf958">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_821e1ca">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_8f272cd">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_f1d68977">
+        <inputEntry id="InputEntry_6c3d75b">
+          <text>"GSHH"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_61238f6">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ff19e11">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c8b85d9">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_8ed0efb">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_bec2e70">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_8564afa3">
+        <inputEntry id="InputEntry_d0482d3">
+          <text>"GSHH"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9b4a1d2">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_09aafae">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e18fb26">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_330dfb1">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_328b4db">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_b2a4c668">
+        <inputEntry id="InputEntry_ca1a36a">
+          <text>"AFCX"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_147fb22">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3d9fcc2">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_91e1f57">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_e42aa9a">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_0d590b0">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_31924fcc">
+        <inputEntry id="InputEntry_a9b0cd0">
+          <text>"AFCX"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6cb900e">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4b01361">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b85c32c">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_7080a92">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_8b2f896">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_6b699bf2">
+        <inputEntry id="InputEntry_0b0b455">
+          <text>"AFCX"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_45d9ded">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2a9b39c">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_30dd762">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_aa5d288">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_2425eab">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_d754c95f">
+        <inputEntry id="InputEntry_5fc5a8c">
+          <text>"AFCX"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b096a66">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_38e7480">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4d315dd">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_cd90b53">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_6d9b55a">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_23c3fd60">
+        <inputEntry id="InputEntry_23fbc0b">
+          <text>"AFCX"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_49883cf">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2e51669">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_30d29f1">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_8491b8e">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_186ff97">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_e232d9ba">
+        <inputEntry id="InputEntry_44472db">
+          <text>"AFCX"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_69e9e7a">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4b7e8aa">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5c53288">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_cdd4a7f">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_49e4396">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_482d5ddc">
+        <inputEntry id="InputEntry_cd1f144">
+          <text>"PRUD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_342b589">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e74cd22">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8c71e36">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_fe3031a">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_661da96">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_0692d0c3">
+        <inputEntry id="InputEntry_ea99f79">
+          <text>"PRUD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_90c0233">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c111694">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_fd2c23b">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_3ffb2bc">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_b77d386">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_a31e194b">
+        <inputEntry id="InputEntry_95651b8">
+          <text>"PRUD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3212da5">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_760909c">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0849260">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_6434e60">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_34b9696">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_50af1166">
+        <inputEntry id="InputEntry_0c770ca">
+          <text>"PRUD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b5328c4">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4f61474">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ce0a118">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_f8dabce">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_88c9f2f">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_13ab8ea4">
+        <inputEntry id="InputEntry_b0740fb">
+          <text>"PRUD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e1e5201">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5bec22d">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_392a8ce">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_ba03f88">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_ddebc67">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_6dec21a3">
+        <inputEntry id="InputEntry_0b908ab">
+          <text>"PRUD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ca26003">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a9a5891">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1b4b0f2">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_e43640c">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_4b92ab6">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_4fae377f">
+        <inputEntry id="InputEntry_f7b844a">
+          <text>"PTNM"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b5858a2">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1889d6a">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3999cc3">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_f27ec75">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_016b7f4">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_e3060605">
+        <inputEntry id="InputEntry_ebc1e24">
+          <text>"PTNM"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6aad80d">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_07b9fb9">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_636b643">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_a6f286d">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_8bfbb6f">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_4d6b6820">
+        <inputEntry id="InputEntry_003ca42">
+          <text>"PTNM"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_fb35811">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ec5ed70">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7082739">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_ea32b39">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_ae07d55">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_b030f8c3">
+        <inputEntry id="InputEntry_242a639">
+          <text>"PTNM"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0d9ad9f">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_623270c">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_608ad53">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_5f5d8b3">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_3c4e324">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_aaf6ecf6">
+        <inputEntry id="InputEntry_72fb11a">
+          <text>"PTNM"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_779857e">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5f03b8f">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_560dff0">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_b0d48c0">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_c51fd79">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_6b60e882">
+        <inputEntry id="InputEntry_5dbdea3">
+          <text>"PTNM"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0fd70dd">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3bdfc71">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_00de238">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_e078c5d">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_ebc8536">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_d8aebaa2">
+        <inputEntry id="InputEntry_25ba7bc">
+          <text>"GLCO"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f1a685b">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7fba747">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5e1c16b">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_56a949e">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_1b76a2f">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_256b0e99">
+        <inputEntry id="InputEntry_2a79bc0">
+          <text>"GLCO"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d6ecf73">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ad4c6b4">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_dc07c49">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_4aaf24d">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_9325ec5">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_c63dbe18">
+        <inputEntry id="InputEntry_d9551a7">
+          <text>"GLCO"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e262e48">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c95f8bf">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a001793">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_e6fbc18">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_8391acf">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_8fbc25bc">
+        <inputEntry id="InputEntry_3876930">
+          <text>"TESTA"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_55c3328">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_95d67bb">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_193274c">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_907fd75">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_7c5feba">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_3bb11c5b">
+        <inputEntry id="InputEntry_da7e9a7">
+          <text>"TESTA"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5985045">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9b083df">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1738d5a">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_6bc9079">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_dc102ee">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_d2981b34">
+        <inputEntry id="InputEntry_97761e0">
+          <text>"TESTA"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_172624b">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f854a22">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a028cd2">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_a0d8d00">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_0129ce5">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_82ed9b4e">
+        <inputEntry id="InputEntry_ca1595c">
+          <text>"TESTA"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_40b7b49">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0f9c56a">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f880a23">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_174e942">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_3f321e3">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_5d89ae41">
+        <inputEntry id="InputEntry_08570dd">
+          <text>"TESTA"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_52998f6">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d70c4c8">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e01e8e1">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_633057e">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_ca8a111">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_615639d2">
+        <inputEntry id="InputEntry_d255f8c">
+          <text>"TESTA"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1800c59">
+          <text>"FI RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8abc474">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4318a7d">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_cd4effb">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_061b0b1">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_5c219851">
+        <inputEntry id="InputEntry_106f5c9">
+          <text>"RSLN"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8016624">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_36f2cae">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a9cfdef">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_19f8df0">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_b896cc8">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_80abe217">
+        <inputEntry id="InputEntry_f93414f">
+          <text>"RSLN"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_42a5358">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4a738d0">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_cbb5cf8">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_25c7f84">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_c92e4b8">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_8db041d4">
+        <inputEntry id="InputEntry_cb15759">
+          <text>"RSLN"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_48a8536">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4ee6a34">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2dd4e0c">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_7d24f9d">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_db8d581">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_d2bd4a17">
+        <inputEntry id="InputEntry_6e164a7">
+          <text>"FLIC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9df5b80">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3139b6d">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0aab3bc">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_bd89ddb">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_0e71926">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_6df5f0d4">
+        <inputEntry id="InputEntry_2719ad8">
+          <text>"FLIC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2486035">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2db0cad">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9cbccd3">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_f145685">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_d16b14c">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_c8d719fa">
+        <inputEntry id="InputEntry_9b7ca4c">
+          <text>"FLIC"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1447001">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_43597e7">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b00d796">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_eb0fa78">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_06cc498">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_1dd171fe">
+        <inputEntry id="InputEntry_f16e658">
+          <text>"GSCH"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_301d669">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2419c24">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b142e43">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_4b5e483">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_8942cad">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_1c20c790">
+        <inputEntry id="InputEntry_f01078c">
+          <text>"GSCH"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0462d3e">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c925b49">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_543ee6b">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_768bd13">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_5dcf017">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_42a4e06f">
+        <inputEntry id="InputEntry_06ee44e">
+          <text>"GSCH"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c975bf2">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2b2ef38">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ef8b49b">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_0119fef">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_a8a4a09">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_91135258">
+        <inputEntry id="InputEntry_1a1ccbc">
+          <text>"GSAL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_dfe78f5">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ea1de60">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5bb11eb">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_ac1a599">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_33ef759">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_30edb71c">
+        <inputEntry id="InputEntry_41d5370">
+          <text>"GSAL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f2c7e30">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0851d32">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_34c96fe">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_a8b94b0">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_80acb23">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_f067173d">
+        <inputEntry id="InputEntry_f27be9c">
+          <text>"GSAL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9bd7557">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_71de9ed">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_04bf973">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_861b407">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_95b7748">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_64f404eb">
+        <inputEntry id="InputEntry_7b68f67">
+          <text>"GSIN"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7d03d9e">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_90e0ca2">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_54c3ebc">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_32f0ef4">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_e5c3e65">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_a53be810">
+        <inputEntry id="InputEntry_a44f3f0">
+          <text>"GSIN"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_25019fa">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d5d10a0">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f047495">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_327027e">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_7173d71">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_5fa7ea63">
+        <inputEntry id="InputEntry_d1801cf">
+          <text>"GSIN"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e803c19">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9f6c225">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_24bf66e">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_7f5a80f">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_b74ceba">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_d84483c9">
+        <inputEntry id="InputEntry_3f4e571">
+          <text>"GSHH"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c5e2cf4">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d2b10ce">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3dae78f">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_f1dfeb6">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_45f4b17">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_2ead1acf">
+        <inputEntry id="InputEntry_2d661c4">
+          <text>"GSHH"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_afdec51">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b87ccc4">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_10cfb56">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_6396f0e">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_84ca752">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_7e99c775">
+        <inputEntry id="InputEntry_0abff58">
+          <text>"GSHH"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_eba6f1f">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9882e9f">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e795c41">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_42cfe68">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_fe067c1">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_40e007bb">
+        <inputEntry id="InputEntry_b2ad9cd">
+          <text>"AFCX"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2ead109">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2fb9d7b">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5637f88">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_64a2c11">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_cbbd44a">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_39cd9e72">
+        <inputEntry id="InputEntry_ca84c83">
+          <text>"AFCX"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_810e3b6">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_bf50189">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d6ba25f">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_c044f07">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_cf12dfb">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_575bcb6b">
+        <inputEntry id="InputEntry_f829b99">
+          <text>"AFCX"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_04a975f">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_124d1c2">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_dc2ed10">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_fd00259">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_5c36646">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_e11139a1">
+        <inputEntry id="InputEntry_564a619">
+          <text>"PRUD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4d7e202">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7dea9d3">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5ed8326">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_426ef8b">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_4315f04">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_f9df9ca4">
+        <inputEntry id="InputEntry_cbd4968">
+          <text>"PRUD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9e4da64">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d41ed36">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0f5c5bd">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_72773be">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_9fceeea">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_af550d25">
+        <inputEntry id="InputEntry_1d993f3">
+          <text>"PRUD"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_fcc4c3c">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ac18821">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ed70f76">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_7d6a2bc">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_2da8c05">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_11c3ed13">
+        <inputEntry id="InputEntry_6376bca">
+          <text>"PTNM"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_3933189">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ee82bc3">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e0373fc">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_3f1c711">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_d69c92a">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_83e39a59">
+        <inputEntry id="InputEntry_209058e">
+          <text>"PTNM"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_2a0e758">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_b423347">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f5d848d">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_aff1b25">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_5829c33">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_7ff7e48a">
+        <inputEntry id="InputEntry_137d41b">
+          <text>"PTNM"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_cdc0d66">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_434427c">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_00897e6">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_cc0943d">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_f5a035a">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_0805e09f">
+        <inputEntry id="InputEntry_7254809">
+          <text>"LISW"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5c81441">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6cce4cd">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f664188">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_1490b01">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_1f3f55b">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_19930b2f">
+        <inputEntry id="InputEntry_1284b86">
+          <text>"LISW"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_384e20c">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_dea9cae">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0d9d8bc">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_ed5824a">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_8093abe">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_31d9d4b1">
+        <inputEntry id="InputEntry_2261439">
+          <text>"LISW"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_438eb16">
+          <text>"RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e22c224">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_169a52d">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_bbb6882">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_776ba5f">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_e7f66137">
+        <inputEntry id="InputEntry_bec27ef">
+          <text>"LISW"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_eca409c">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7291e7a">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_cea39cb">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_da51726">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_59ad147">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_af50faf1">
+        <inputEntry id="InputEntry_9fa191b">
+          <text>"LISW"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ce1e3e0">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_e572ab2">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_755abea">
+          <text>"False"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_3d8a145">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_78586d0">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_9409a022">
+        <inputEntry id="InputEntry_35ae01e">
+          <text>"LISW"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4545789">
+          <text>"FINANCIAL RETURN MAIL"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d575170">
+          <text>"True"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0fd6a93">
+          <text>"True"</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_0e3b931">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_0a8523e">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_5cc04cc9">
+        <inputEntry id="InputEntry_9089ce5">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8bf1cff">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8f15e2c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_1c42d17">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_5dc7090">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="OutputEntry_84bba37">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="ReturnMailIdentification">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:camunda="http://camunda.org/schema/1.0/dmn" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_Decision_4aa37e28" name="DecisionTable" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.33.1" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.22.0">
+  <decision id="ReturnMailDecision" name="ReturnMailDecision">
+    <decisionTable id="DecisionTable_7318bd8" hitPolicy="FIRST">
+      <input id="Input_c75b1ba7" label="OwnerAnnuitantMatch" camunda:inputVariable="OwnerAnnuitantMatch">
+        <inputExpression id="InputExpression_6b03cc41" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_358c4c1d" label="OwnerJointAnnuitantMatch" camunda:inputVariable="OwnerJointAnnuitantMatch">
+        <inputExpression id="InputExpression_3c9e2d11" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_e5f54e79" label="JointOwnerAnnuitantMatch" camunda:inputVariable="JointOwnerAnnuitantMatch">
+        <inputExpression id="InputExpression_21253ce8" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_695d6e8d" label="JointOwnerJointAnnuitantMatch" camunda:inputVariable="JointOwnerJointAnnuitantMatch">
+        <inputExpression id="InputExpression_fbeb8abf" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_fa611f01" label="SkipReturnMail" camunda:inputVariable="SkipReturnMail">
+        <inputExpression id="InputExpression_e5825f86" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="Input_689dde85" label="IsReturnMailRequired" camunda:inputVariable="IsReturnMailRequired">
+        <inputExpression id="InputExpression_3aa3981b" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="Output_f67bb91" label="ReturnMailReviewFound" name="ReturnMailReviewFound" typeRef="boolean" />
+      <rule id="Rule_0cb04108">
+        <inputEntry id="InputEntry_e93ab3c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_30935d9">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_31d8e85">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_bb05104">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_40476e4">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_9efe75e">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_b4455e1">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_2ec3f022">
+        <inputEntry id="InputEntry_5c62a7a">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6c9f179">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d8057eb">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ae748dd">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7e014bb">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_cbc7031">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_28429d1">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_ec87f5f6">
+        <inputEntry id="InputEntry_bb2beac">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_33252c3">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_64f7e72">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5b2b6fa">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_7324194">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d851649">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_07b1356">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_a817c1e7">
+        <inputEntry id="InputEntry_dd5907f">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_c46311c">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d47529d">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_92d5661">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_126600d">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_5df7326">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_95228fa">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_63c3e19f">
+        <inputEntry id="InputEntry_bdb2c4e">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_a6eb7cd">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f4bb268">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_f6389e2">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_df5af83">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_8e92969">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_cc25f5f">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_fd003fe6">
+        <inputEntry id="InputEntry_2f7b3c8">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_641a4c1">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4ab46ea">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_0872e37">
+          <text>"False"</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4c36150">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="InputEntry_d3a54ab">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_0e75dcf">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="Rule_47f3d65c">
+        <inputEntry id="InputEntry_25f0465">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_6e2198a">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_037efeb">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_ddcbf07">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_39276bf">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="InputEntry_4f48e3e">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_169d953">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="ReturnMailDecision">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
